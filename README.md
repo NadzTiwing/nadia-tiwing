@@ -1,5 +1,4 @@
 - 👋 Hi, I’m @NadzTiwing
 - 👀 I’m interested in coding, arts and music
-- 🌱 I’m currently learning networking
+- 🌱 I’m currently learning networking and german language for my career progression
 - 📫 How to reach me just email me via tiwingnadia@gmail.com
-
