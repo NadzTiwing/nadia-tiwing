@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+/* customs */
+#profile-pic{
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: start !important;
+  border-bottom: 1px white;
+}
