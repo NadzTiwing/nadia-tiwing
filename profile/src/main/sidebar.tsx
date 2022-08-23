@@ -5,7 +5,8 @@ import {
     Typography,
     Box,
     Avatar,
-    Divider
+    Divider,
+    Grid
 } from '@mui/material'
 import { orange, brown } from '@mui/material/colors';
 import PersonIcon from '@mui/icons-material/Person';
@@ -13,13 +14,18 @@ import FeedIcon from '@mui/icons-material/Feed';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import FactCheckIcon from '@mui/icons-material/FactCheck';
 import BookOnlineIcon from '@mui/icons-material/BookOnline';
+import { motion, AnimatePresence } from "framer-motion";
+import AboutMe from './content/about_me';
+import Resume from './content/resume';
+import Portfolio from './content/portfolio';
+import Projects from './content/projects';
+import Blogs from './content/blogs';
 
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
   value: number;
 }
-
 
 function TabPanel(props: TabPanelProps) {
   const { children, value, index, ...other } = props;
@@ -55,34 +61,48 @@ export default function Sidebar() {
   
   const navLinks=[
     {
-        id:'about_me',
-        title:'About Me',
-        icon: PersonIcon
+      index:4,
+      id:'about_me',
+      title:'About Me',
+      icon: PersonIcon,
+      content: <AboutMe/>
     },
     {
-        id:'resume',
-        title:'Resume',
-        icon: FeedIcon
+      index:5,
+      id:'resume',
+      title:'Resume',
+      icon: FeedIcon,
+      content: <Resume/>
     },
     {
-        id:'projects',
-        title:'Current Projects',
-        icon: AssignmentIcon
+      index:6,
+      id:'projects',
+      title:'Current Projects',
+      icon: AssignmentIcon,
+      content: <Projects/>
     },
     {
-        id:'portfolio',
-        title:'Portfolio',
-        icon: FactCheckIcon
+      index:7,
+      id:'portfolio',
+      title:'Portfolio',
+      icon: FactCheckIcon,
+      content: <Portfolio/>
     },
     {
-        id:'blogs',
-        title:'Blogs',
-        icon: BookOnlineIcon
+      index:8,
+      id:'blogs',
+      title:'Blogs',
+      icon: BookOnlineIcon,
+      content: <Blogs/>
     },
   ];
 
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-    setValue(newValue);
+  const handleChange = (event: React.SyntheticEvent) => {
+    let tabId = event.currentTarget.getAttribute('id')?.toString();
+    let tab = tabId?.split('-');
+    let tabIndex = tab? parseInt(tab[2]):0;
+    setValue(tabIndex);
+    console.log(value);
   };
 
   return (
@@ -92,7 +112,7 @@ export default function Sidebar() {
       <Tabs
         orientation="vertical"
         value={value}
-        onChange={handleChange}
+        onChange={evt => handleChange(evt)}
         aria-label="Sidebar"
         sx={{ borderRight: 1, color:coffee, bgcolor: sidebarBg, py:1}}
         className='nav-links'
@@ -107,37 +127,28 @@ export default function Sidebar() {
         <Typography variant="h4" sx={{color:coffee}}>Software Engineer</Typography>
         <Divider sx={{pt:3}}/>
         {navLinks.map( (link, index) =>(
-            <Tab 
-            icon={<link.icon/>}
-            iconPosition="start"
-            label={link.title} {...a11yProps(index)} 
-            sx={{color:navText, px:8, my:0}} 
-            className='nav-links'
-            />
+          <Tab 
+          icon={<link.icon/>}
+          iconPosition="start"
+          label={link.title} {...a11yProps(link.index)} 
+          sx={{color:navText, px:8, my:0}} 
+          className='nav-links'
+          />
         ))}
         
       </Tabs>
-      <TabPanel value={value} index={0}>
-        Item One
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        Item Two
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Item Three
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        Item Four
-      </TabPanel>
-      <TabPanel value={value} index={4}>
-        Item Five
-      </TabPanel>
-      <TabPanel value={value} index={5}>
-        Item Six
-      </TabPanel>
-      <TabPanel value={value} index={6}>
-        Item Seven
-      </TabPanel>
+      {navLinks.map( (link, index) =>(  
+        <TabPanel value={value} index={link.index}>
+          <AnimatePresence exitBeforeEnter>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, y: 5 }}
+            > 
+              {link.content}
+            </motion.div>
+          </AnimatePresence>
+        </TabPanel>
+      ))}
     </Box>
   );
 }

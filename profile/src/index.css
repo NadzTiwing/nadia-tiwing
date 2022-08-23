@@ -26,3 +26,8 @@ code {
   justify-content: start !important;
   border-bottom: 1px white;
 }
+
+.text{
+  margin-top: 20em;
+  /* opacity: 0; */
+}
