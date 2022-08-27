@@ -27,7 +27,11 @@ code {
   border-bottom: 1px white;
 }
 
-.text{
-  margin-top: 20em;
-  /* opacity: 0; */
+.underline{
+  border-bottom: 5px solid orange;
+}
+
+.center{
+  display: flex;
+  align-self: center;
 }

@@ -20,6 +20,7 @@ import Resume from './content/resume';
 import Portfolio from './content/portfolio';
 import Projects from './content/projects';
 import Blogs from './content/blogs';
+import Template from './content/template';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -54,10 +55,7 @@ function a11yProps(index: number) {
 }
 
 export default function Sidebar() {
-  const [value, setValue] = React.useState(0);
-  const sidebarBg = orange[500];
-  const navText = orange[200];
-  const coffee = brown[900];
+  const [value, setValue] = React.useState(4);
   
   const navLinks=[
     {
@@ -102,19 +100,18 @@ export default function Sidebar() {
     let tab = tabId?.split('-');
     let tabIndex = tab? parseInt(tab[2]):0;
     setValue(tabIndex);
-    console.log(value);
   };
 
   return (
     <Box
-      sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: '100vh' }}
+      sx={{ flexGrow: 1, bgcolor: 'primary.dark', display: 'flex', height: '100vh' }}
     >
       <Tabs
         orientation="vertical"
         value={value}
         onChange={evt => handleChange(evt)}
         aria-label="Sidebar"
-        sx={{ borderRight: 1, color:coffee, bgcolor: sidebarBg, py:1}}
+        sx={{ borderRight: 1, color:'primary.light', bgcolor: 'primary.dark', py:1}}
         className='nav-links'
         indicatorColor='primary'
       >
@@ -123,15 +120,15 @@ export default function Sidebar() {
         src="/img/nadz.png"
         id='profile-pic'
         />
-        <Typography variant="h2" sx={{color:coffee}}>NADIA A. TIWING</Typography>
-        <Typography variant="h4" sx={{color:coffee}}>Software Engineer</Typography>
+        <Typography variant="h2" sx={{color:'primary.main'}} className="center">NADIA A. TIWING</Typography>
+        <Typography variant="h4" sx={{color:'primary.main'}} className="center">Software Engineer</Typography>
         <Divider sx={{pt:3}}/>
         {navLinks.map( (link, index) =>(
           <Tab 
           icon={<link.icon/>}
           iconPosition="start"
           label={link.title} {...a11yProps(link.index)} 
-          sx={{color:navText, px:8, my:0}} 
+          sx={{color:'primary.light', px:8, my:0}} 
           className='nav-links'
           />
         ))}
@@ -144,7 +141,7 @@ export default function Sidebar() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, y: 5 }}
             > 
-              {link.content}
+              <Template title={link.title} details={link.content}/>
             </motion.div>
           </AnimatePresence>
         </TabPanel>

@@ -2,9 +2,15 @@ import { Grid } from "@mui/material";
 
 export default function Resume() {
     return(
-        <Grid container spacing={0}>
-            <Grid item xs={8}>
-                Resume: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iste facilis earum. Ipsum, reprehenderit delectus.
+        <Grid container spacing={3}>
+            <Grid item xs>
+                <div>xs</div>
+            </Grid>
+            <Grid item xs={6}>
+                <div>xs=6</div>
+            </Grid>
+            <Grid item xs>
+                <div>xs</div>
             </Grid>
         </Grid>
     );
