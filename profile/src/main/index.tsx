@@ -25,13 +25,13 @@ export default function Main(){
         letterSpacing: 1,
         lineHeight: 2,
         alignSelf: 'flex-start'
-    }
+    };
     theme.palette.primary = {
         light:'white',
         main:mainColor,
         dark:'#222222',
         contrastText:'white'
-    }
+    };
 
     return(
         <ThemeProvider theme={theme}>

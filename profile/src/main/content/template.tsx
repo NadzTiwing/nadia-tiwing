@@ -10,7 +10,6 @@ export default function Template(content: Content) {
         <Grid container spacing={0} justifyContent="flex-start" alignItems="flex-start" direction="column">
             <Grid item xs={6}>
                 <Typography variant={'h1'}>{content.title}</Typography>
-                
                 <Box
                 sx={{
                     mt: 2,
@@ -21,7 +20,12 @@ export default function Template(content: Content) {
                 />
             </Grid>
             <Grid>
+                <Box 
+                display="grid"
+                gridTemplateColumns="repeat(12, 1fr)"
+                >
                 {content.details}
+                </Box>
             </Grid>
         </Grid>
     );
