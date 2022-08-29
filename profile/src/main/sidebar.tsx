@@ -142,7 +142,7 @@ export default function ResponsiveDrawer(props: Props) {
       />
       <Typography variant="h2" sx={{color:'primary.main'}} className='center'>NADIA A. TIWING</Typography>
       <Typography variant="h4" sx={{color:'primary.main'}} className="center">Software Engineer</Typography>
-      <Toolbar />
+      {/* <Toolbar /> */}
       <Divider />
       <Tabs
         orientation="vertical"

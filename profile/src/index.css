@@ -39,3 +39,45 @@ code {
 .css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
   background-color: #222222 !important;
 }
+
+.customCard{
+  border: 1px solid gray;
+}
+
+.px-1{
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.custom-badge{
+  border-radius: 25px;
+  padding: 0.5em 1.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  font-size: 12px;
+}
+
+.proficient{
+  background-color: violet;
+  color: black;
+}
+
+.expert{
+  background-color: lightgreen;
+  color: black;
+}
+
+.competent{
+  background-color: orange;
+  color: white;
+}
+
+.novice{
+  background-color: gray;
+  color: white;
+}
+
+.scrollable-body{
+  height: 5em;
+  overflow-y: auto;
+}

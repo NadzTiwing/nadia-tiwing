@@ -8,7 +8,7 @@ export default function Resume() {
             position: 'SOFTWARE ENGINEER',
             company: 'Oracle Netsuite Philippines Corporation',
             desc: [
-                'Maintain and enhanced Netsuite ERP System using Suitescript and Jasmine for unit test automation.',
+                'Maintaining and enhancing Netsuite ERP System using Suitescript and Jasmine for unit test automation.',
                 'Part of developing Netsuite Next ERP System using Oracle JavaScript Extension Toolkit(OJET) Framework.',
                 'Able to create design proposals for both backend and frontend design changes.'
             ]
@@ -19,7 +19,7 @@ export default function Resume() {
             position: 'FULL-STACK WEB DEVELOPER',
             company: 'Magicsoft International Software Development and Services',
             desc: [
-                'Part of creating, improving and developing an online learning platformusing Bootstrap 5 ,NextJS,Prisma, NodeJS and MySql.',
+                'Part of creating, improving and developing an online learning platform using Bootstrap 5 , NextJS, Prisma, NodeJS, WebSocket and MySql.',
                 'Responsible in creating the official website of this start-up companyusing Wordpress.',
                 'Worked with project managers and consult clients to resolve technical issues and establish problem specifications and system designs.',
                 'Analyze software usability and performance, suggesting changes to improve functionality or be able to deliver the important features on deploymentfor testing.',
@@ -76,7 +76,7 @@ export default function Resume() {
             date: 'October 22, 2020',
             title: 'Introduction to Malware Threats',
             company: 'Trend Micro',
-            link: '#'
+            link: '/certificates/malware_threats.pdf'
         }
     ];
 
