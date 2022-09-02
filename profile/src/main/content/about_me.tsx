@@ -1,15 +1,24 @@
+import * as React from 'react';
 import { Grid, Typography, Box, Link, Badge } from "@mui/material";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-export default function AboutMe() {
+
+export default function AboutMe(screen: IScreenSize) {
+    const [gridSize, setGridSize] = React.useState("span 6");
+
+    React.useEffect(() => {
+        let size = screen.isMobile ? "span 12": "span 6";
+        setGridSize(size);
+    }, [screen.isMobile]);
+
     return(
         <>
             <Box gridColumn="span 12">
                 <Typography variant='body1' sx={{ mb:4 }} >
-                    Currently working as a software engineer with a 3 years of experience in web developing, designing,  testing, and implementating a cutting-edge engineering solutions. Able to consults well with clients and enhances configuration for optimal customer satisfaction. And skilled at team collaboration while working independently in remote environments.
+                    Currently working as a software engineer with a 3 years of experience in web developing, designing,  testing, and implementing a cutting-edge engineering solutions. Able to consults well with clients and enhances configuration for optimal customer satisfaction. And skilled at team collaboration while working independently in remote environments.
                 </Typography>
             </Box>
             <Box gridColumn="span 12">
-                <Typography variant='h2'>Details</Typography>
+                <Typography variant='h2'>Details {gridSize} </Typography>
                 <Typography variant='body1'>
                     <p>Birthdate: March 15,1998</p>
                     <p>Location: Manila Philippines</p>
@@ -17,7 +26,7 @@ export default function AboutMe() {
                     <p>Interests: Programming, Networking, Painting, Sketching, Reading, Travelling</p>
                 </Typography>
             </Box>
-            <Box gridColumn="span 6" sx={{ mt: 2 }}>
+            <Box gridColumn={ gridSize } sx={{ mt: 2 }}>
                 <Typography variant='h2'>Technical Skills</Typography>
                 <Typography variant='body1'>
                     <p>Javascript: <span className="custom-badge expert">Expert</span></p>
@@ -27,7 +36,7 @@ export default function AboutMe() {
                     <p>NextJs/ReactJs: <span className="custom-badge proficient">Proficient</span></p>
                 </Typography>
             </Box>
-            <Box gridColumn="span 6" sx={{ mt: 6 }}>
+            <Box gridColumn={ gridSize } sx={ screen.isMobile ? { mt: 0 } : { mt: 6 } }>
                 <Typography variant='body1'>
                     <p>ExpressJs/NodeJs: <span className="custom-badge proficient">Proficient</span></p>
                     <p>MySQL: <span className="custom-badge proficient">Proficient</span></p>

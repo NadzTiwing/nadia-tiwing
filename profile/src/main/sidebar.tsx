@@ -5,13 +5,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -41,7 +34,7 @@ interface Props {
    * Injected by the documentation to work in an iframe.
    * You won't need it on your project.
    */
-  window?: () => Window;
+   windowResponse?: () => Window;
 }
 
 interface TabPanelProps {
@@ -78,8 +71,9 @@ function a11yProps(index: number) {
 
 
 export default function ResponsiveDrawer(props: Props) {
-  const { window } = props;
+  const { windowResponse } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [isMobile, setIsMobile] = React.useState(false);
 
   const [value, setValue] = React.useState(0);
   
@@ -89,35 +83,35 @@ export default function ResponsiveDrawer(props: Props) {
       id:'about_me',
       title:'About Me',
       icon: PersonIcon,
-      content: <AboutMe/>
+      content: <AboutMe isMobile={ isMobile }/>
     },
     {
       index:1,
       id:'resume',
       title:'Resume',
       icon: FeedIcon,
-      content: <Resume/>
+      content: <Resume isMobile={ isMobile }/>
     },
     {
       index:2,
       id:'projects',
       title:'Projects',
       icon: AssignmentIcon,
-      content: <Projects/>
+      content: <Projects isMobile={ isMobile }/>
     },
     {
       index:3,
       id:'portfolio',
       title:'Portfolio',
       icon: FactCheckIcon,
-      content: <Portfolio/>
+      content: <Portfolio isMobile={ isMobile }/>
     },
     {
       index:4,
       id:'blogs',
       title:'Blogs',
       icon: BookOnlineIcon,
-      content: <Blogs/>
+      content: <Blogs isMobile={ isMobile }/>
     },
   ];
 
@@ -131,6 +125,18 @@ export default function ResponsiveDrawer(props: Props) {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+
+  const handleResize = () => {
+    if (window.innerWidth < 720) {
+        setIsMobile(true);
+    } else {
+        setIsMobile(false);
+    }
+  }
+  
+  React.useEffect(() => {
+    window.addEventListener("resize", handleResize);
+  });
   
 
   const drawer = (
@@ -166,7 +172,7 @@ export default function ResponsiveDrawer(props: Props) {
     </div>
   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
+  const container = windowResponse !== undefined ? () => windowResponse().document.body : undefined;
 
   return (
     <Box sx={{ display: 'flex', bgcolor: 'primary.dark' }}>

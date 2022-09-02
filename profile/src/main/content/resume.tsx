@@ -1,6 +1,14 @@
+import * as React from 'react';
 import { Box, Grid, Typography, Link } from "@mui/material";
 
-export default function Resume() {
+export default function Resume(screen: IScreenSize) {
+    // const [gridSize, setGridSize] = React.useState("span 6");
+
+    // React.useEffect(() => {
+    //     let size = screen.isMobile ? "span 12": "span 6";
+    //     setGridSize(size);
+    // }, [screen.isMobile]);
+
     const experiences = [
         {   
             id: 'netsuite-dev',
@@ -8,9 +16,10 @@ export default function Resume() {
             position: 'SOFTWARE ENGINEER',
             company: 'Oracle Netsuite Philippines Corporation',
             desc: [
-                'Maintaining and enhancing Netsuite ERP System using Suitescript and Jasmine for unit test automation.',
+                'Maintaining and enhancing Netsuite ERP System using Suitescript and Jasmine Testing Framework for unit test automation.',
                 'Part of developing Netsuite Next ERP System using Oracle JavaScript Extension Toolkit(OJET) Framework.',
-                'Able to create design proposals for both backend and frontend design changes.'
+                'Able to design proposals for both backend and frontend design changes.',
+                'Resolving customer\'s technical issues.'
             ]
         },
         {   
@@ -77,6 +86,12 @@ export default function Resume() {
             title: 'Introduction to Malware Threats',
             company: 'Trend Micro',
             link: '/certificates/malware_threats.pdf'
+        },
+        {
+            date: 'January 24, 2021',
+            title: 'Introduction to Cybersecurity',
+            company: 'Cisco Networking Academy',
+            link: '/certificates/intro_cybersecurity.pdf'
         }
     ];
 
@@ -87,10 +102,10 @@ export default function Resume() {
             </Box>
             { experiences.map(exp => (
                 <>
-                    <Box gridColumn="span 3">
+                    <Box gridColumn={screen.isMobile ? "span 12":"span 3"}>
                         <i>{ exp.dateRange }</i>  
                     </Box>
-                    <Box gridColumn="span 9">
+                    <Box gridColumn={screen.isMobile ? "span 12":"span 9"}>
                         <Typography variant='h4' sx={{ color: 'primary.main' }}>{ exp.position }</Typography>
                         <strong><i>{ exp.company }</i></strong>
                         <ul>
@@ -107,10 +122,10 @@ export default function Resume() {
             </Box>
             { schools.map(school => (
                 <>
-                    <Box gridColumn="span 3">
+                    <Box gridColumn={screen.isMobile ? "span 12":"span 3"}>
                         <i>{ school.year }</i>  
                     </Box>
-                    <Box gridColumn="span 9">
+                    <Box gridColumn={screen.isMobile ? "span 12":"span 9"}>
                         <Typography variant='h4' sx={{ color: 'primary.main' }}>{ school.name }</Typography>
                         <strong><i>{ school?.degree }</i></strong>
                         <ul>
@@ -127,10 +142,10 @@ export default function Resume() {
             </Box>
             { seminars.map(seminar => (
                 <>
-                    <Box gridColumn="span 3">
+                    <Box gridColumn={screen.isMobile ? "span 12":"span 3"}>
                         <i>{ seminar.date }</i>  
                     </Box>
-                    <Box gridColumn="span 9">
+                    <Box gridColumn={screen.isMobile ? "span 12":"span 9"} sx={{ mb:2 }}>
                         <Link href={ seminar.link } target="_blank" rel="noopener"  >
                             <Typography variant='h4' sx={{ color: 'primary.main' }}>{ seminar.title }</Typography>
                         </Link>

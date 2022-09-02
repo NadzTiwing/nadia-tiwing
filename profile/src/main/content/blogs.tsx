@@ -7,7 +7,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function Blogs() {
+export default function Blogs(screen: IScreenSize) {
     const viewSite = (url: string) => {
         const newTab = window.open(url, '_blank', 'noopener,noreferrer');
         if(newTab) newTab.opener = null;
@@ -25,7 +25,7 @@ export default function Blogs() {
 
     return(
         <>
-            <Box gridColumn="span 4" sx={{ mt: 3, mb: 14 }}>
+            <Box gridColumn={screen.isMobile ? "span 12" : "span 4"} sx={{ mt: 3, mb: 14 }}>
                 { blogs.map( blog => (
                     <Card key={ blog.id } sx={{ maxWidth: 345, p:2, bgcolor: 'primary.dark' }} className='customCard'>
                         <CardMedia
