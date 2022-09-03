@@ -11,8 +11,7 @@ import Typography from '@mui/material/Typography';
 import {
   Tabs,
   Tab,
-  Avatar,
-  Grid
+  Avatar
 } from '@mui/material';
 import PersonIcon from '@mui/icons-material/Person';
 import FeedIcon from '@mui/icons-material/Feed';
@@ -143,7 +142,7 @@ export default function ResponsiveDrawer(props: Props) {
     <div className="bg-dark">
       <Avatar
       alt="Remy Sharp"
-      src="/img/nadz.png"
+      src="./img/nadz.png"
       id='profile-pic'
       />
       <Typography variant="h2" sx={{color:'primary.main'}} className='center'>NADIA A. TIWING</Typography>

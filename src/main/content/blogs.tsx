@@ -16,7 +16,7 @@ export default function Blogs(screen: IScreenSize) {
     const blogs = [
         {
             id: 'object-detector',
-            imgUrl: '/img/object-detector.JPG',
+            imgUrl: './img/object-detector.JPG',
             siteUrl: 'https://devdojo.com/mc4carpediem/simple-object-detector-with-nextjs',
             title: 'Simple Object Detector',
             content: 'A simple application that locates an object in the image using NextJS which can be also implemented in ReactJS.'

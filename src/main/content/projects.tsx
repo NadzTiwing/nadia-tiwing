@@ -16,7 +16,7 @@ export default function Projects(screen: IScreenSize) {
     const projects = [
         {
             id: 'learning-system',
-            imgUrl: '/img/projects-ongoing.jpg',
+            imgUrl: './img/projects-ongoing.jpg',
             siteUrl: '#',
             title: 'Vocabulary Learning System',
             content: 'A simple application that saves word/s you want to learn then learn those word/s in a fun way.',

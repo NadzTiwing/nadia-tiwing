@@ -16,14 +16,14 @@ export default function Portfolio(screen: IScreenSize) {
     const samples = [
         {
             id: 'mint09-site',
-            imgUrl: '/img/mint09-site.png',
+            imgUrl: './img/mint09-site.png',
             siteUrl: 'https://mint09.com/',
             title: 'Mint09',
             content: 'Part of the Magicsoft team in developing of this e-learning system.'
         },
         {
             id: 'mint05-hr-site',
-            imgUrl: '/img/mint05.JPG',
+            imgUrl: './img/mint05.JPG',
             siteUrl: 'https://hr.mintlang.com/hr_portal/',
             title: 'Mint05',
             content: 'Part of the designing and front-end team that developed the HR Portal, a one-stop shop tool for all employees of Mint05/Infuturo, Inc..'

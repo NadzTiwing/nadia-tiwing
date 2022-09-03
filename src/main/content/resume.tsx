@@ -85,13 +85,13 @@ export default function Resume(screen: IScreenSize) {
             date: 'October 22, 2020',
             title: 'Introduction to Malware Threats',
             company: 'Trend Micro',
-            link: '/certificates/malware_threats.pdf'
+            link: './certificates/malware_threats.pdf'
         },
         {
             date: 'January 24, 2021',
             title: 'Introduction to Cybersecurity',
             company: 'Cisco Networking Academy',
-            link: '/certificates/intro_cybersecurity.pdf'
+            link: './certificates/intro_cybersecurity.pdf'
         }
     ];
 
