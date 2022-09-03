@@ -140,7 +140,7 @@ export default function ResponsiveDrawer(props: Props) {
   
 
   const drawer = (
-    <div>
+    <div className="bg-dark">
       <Avatar
       alt="Remy Sharp"
       src="/img/nadz.png"
@@ -155,7 +155,7 @@ export default function ResponsiveDrawer(props: Props) {
         value={value}
         onChange={evt => handleChange(evt)}
         aria-label="Sidebar"
-        sx={{ borderRight: 1, color:'primary.light', py:1}}
+        sx={{ borderRight: 1, color:'primary.light', py:1 }}
         className='nav-links'
         indicatorColor='primary'
       >
@@ -183,7 +183,7 @@ export default function ResponsiveDrawer(props: Props) {
         sx={{
           // width: { sm: `calc(100% - ${drawerWidth}px)` },
           width: { sm: `0` },
-          ml: { sm: `${drawerWidth}px` },
+          ml: { sm: `${drawerWidth}px` }
         }}
       >
         <Toolbar>
@@ -215,6 +215,7 @@ export default function ResponsiveDrawer(props: Props) {
           sx={{
             display: { xs: 'block', sm: 'none' },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            bgcolor: 'primary.dark'
           }}
         >
           {drawer}
@@ -243,7 +244,7 @@ export default function ResponsiveDrawer(props: Props) {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, y: 5 }}
               > 
-                <Template title={link.title} details={link.content}/>
+                <Template title={link.title} details={link.content} isMobile={ isMobile } />
               </motion.div>
             </AnimatePresence>
           </TabPanel>

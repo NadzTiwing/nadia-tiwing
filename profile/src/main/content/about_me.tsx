@@ -18,7 +18,7 @@ export default function AboutMe(screen: IScreenSize) {
                 </Typography>
             </Box>
             <Box gridColumn="span 12">
-                <Typography variant='h2'>Details {gridSize} </Typography>
+                <Typography variant='h2'>Details</Typography>
                 <Typography variant='body1'>
                     <p>Birthdate: March 15,1998</p>
                     <p>Location: Manila Philippines</p>

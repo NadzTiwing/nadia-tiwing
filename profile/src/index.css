@@ -81,3 +81,8 @@ code {
   height: 5em;
   overflow-y: auto;
 }
+
+.bg-dark{
+  background-color: #222222 !important;
+  height: 100%;
+}
