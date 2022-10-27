@@ -14,7 +14,7 @@ export default function AboutMe(screen: IScreenSize) {
         <>
             <Box gridColumn="span 12">
                 <Typography variant='body1' sx={{ mb:4 }} >
-                    Currently working as a software engineer with a 3 years of experience in web developing, designing,  testing, and implementing a cutting-edge engineering solutions. Able to consults well with clients and enhances configuration for optimal customer satisfaction. And skilled at team collaboration while working independently in remote environments.
+                    A passionate developer who has a 3 years of experience in web developing, designing,  testing, and implementing a cutting-edge engineering solutions. Able to consults well with clients and enhances configuration for optimal customer satisfaction. And skilled at team collaboration while working independently in remote environments.
                 </Typography>
             </Box>
             <Box gridColumn="span 12">
@@ -40,7 +40,7 @@ export default function AboutMe(screen: IScreenSize) {
                 <Typography variant='body1'>
                     <p>ExpressJs/NodeJs: <span className="custom-badge proficient">Proficient</span></p>
                     <p>MySQL: <span className="custom-badge proficient">Proficient</span></p>
-                    <p>PHP: <span className="custom-badge competent">Competent</span></p>
+                    <p>PHP: <span className="custom-badge novice">Novice</span></p>
                     <p>Python: <span className="custom-badge novice">Novice</span></p>
                 </Typography>
             </Box>

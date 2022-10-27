@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, Grid, Typography, Link } from "@mui/material";
+import { Box, Typography, Link } from "@mui/material";
 
 export default function Resume(screen: IScreenSize) {
     // const [gridSize, setGridSize] = React.useState("span 6");

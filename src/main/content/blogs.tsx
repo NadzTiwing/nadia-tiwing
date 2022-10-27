@@ -6,12 +6,14 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { viewSite } from '../../util/helper';
 
-export default function Blogs(screen: IScreenSize) {
-    const viewSite = (url: string) => {
-        const newTab = window.open(url, '_blank', 'noopener,noreferrer');
-        if(newTab) newTab.opener = null;
-    };
+export default function Portfolio(screen: IScreenSize) {
+    
+    // const viewSite = (url: string) => {
+    //     const newTab = window.open(url, '_blank', 'noopener,noreferrer');
+    //     if(newTab) newTab.opener = null;
+    // };
 
     const blogs = [
         {
@@ -25,32 +27,33 @@ export default function Blogs(screen: IScreenSize) {
             id: 'dynamic-sidebar',
             imgUrl: './img/dynamic-sidebar.png',
             siteUrl: 'https://devdojo.com/tiwingnadia/how-to-create-a-dynamic-navigation-bar-using-reactjs',
-            title: 'How to Create a Dynamic Navigation Bar using ReactJS',
+            title: 'Dynamic Sidebar',
             content: 'A simple application that dynamically add, edit and delete menu items'
         },
     ];
 
     return(
         <>
-            <Box gridColumn={screen.isMobile ? "span 12" : "span 4"} sx={{ mt: 3, mb: 14 }}>
-                { blogs.map( blog => (
-                    <Card key={ blog.id } sx={{ maxWidth: 345, p:2, bgcolor: 'primary.dark' }} className='customCard'>
-                        <CardMedia
-                            component="img"
-                            height="180"
-                            image={ blog.imgUrl }
-                            alt={ blog.id+"-img" }
-                        />
-                        <CardContent sx={{ color:'primary.light' }}>
-                            <Typography gutterBottom variant="h5" component="div">{ blog.title }</Typography>
-                            <Typography variant="body2">{ blog.content }</Typography>
-                        </CardContent>
-                        <CardActions>
-                            <Button size="small" onClick={ () => viewSite(blog.siteUrl) }>View</Button>
-                        </CardActions>
-                    </Card>
-                )) }
+        { blogs.map( blog => (
+            <Box gridColumn={screen.isMobile ? "span 12" : "span 4"} sx={{ mt: 3, mb: 14, px:1 }}  key={ blog.id }>
+                <Card sx={{ maxWidth: 345, p:2, bgcolor: 'primary.dark' }} className='customCard'>
+                    <CardMedia
+                        component="img"
+                        height="180"
+                        image={ blog.imgUrl }
+                        alt={ blog.id+"-img" }
+                    />
+                    <CardContent sx={{ color:'primary.light' }}>
+                        <Typography gutterBottom variant="h6" component="div">{ blog.title }</Typography>
+                        <Typography variant="body2" className="scrollable-body">{ blog.content }</Typography>
+                    </CardContent>
+                    <CardActions>
+                        <Button size="small" onClick={ () => viewSite(blog.siteUrl) }>View</Button>
+                    </CardActions>
+                </Card>
             </Box>
+        )) }
+        
         </>
     );
 }
