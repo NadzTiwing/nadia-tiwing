@@ -21,6 +21,13 @@ export default function Blogs(screen: IScreenSize) {
             title: 'Simple Object Detector',
             content: 'A simple application that locates an object in the image using NextJS which can be also implemented in ReactJS.'
         },
+        {
+            id: 'dynamic-sidebar',
+            imgUrl: './img/dynamic-sidebar.png',
+            siteUrl: 'https://devdojo.com/tiwingnadia/how-to-create-a-dynamic-navigation-bar-using-reactjs',
+            title: 'How to Create a Dynamic Navigation Bar using ReactJS',
+            content: 'A simple application that dynamically add, edit and delete menu items'
+        },
     ];
 
     return(

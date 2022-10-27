@@ -16,10 +16,10 @@ export default function Resume(screen: IScreenSize) {
             position: 'SOFTWARE ENGINEER',
             company: 'Oracle Netsuite Philippines Corporation',
             desc: [
-                'Maintaining and enhancing Netsuite ERP System using Suitescript and Jasmine Testing Framework for unit test automation.',
+                'Improved Netsuite ERP System using Suitescript and Jasmine Testing Framework for unit test automation.',
                 'Part of developing Netsuite Next ERP System using Oracle JavaScript Extension Toolkit(OJET) Framework.',
-                'Able to design proposals for both backend and frontend design changes.',
-                'Resolving customer\'s technical issues.'
+                'Design proposals for both backend and frontend design changes.',
+                'Address customer\'s technical issues.'
             ]
         },
         {   
@@ -28,12 +28,12 @@ export default function Resume(screen: IScreenSize) {
             position: 'FULL-STACK WEB DEVELOPER',
             company: 'Magicsoft International Software Development and Services',
             desc: [
-                'Part of creating, improving and developing an online learning platform using Bootstrap 5 , NextJS, Prisma, NodeJS, WebSocket and MySql.',
-                'Responsible in creating the official website of this start-up companyusing Wordpress.',
+                'Developed and managed an international online e-learning platform using Bootstrap 5 , NextJS, Prisma, NodeJS, WebSocket and MySql.',
+                'Developed an official website of this start-up company using Wordpress.',
                 'Worked with project managers and consult clients to resolve technical issues and establish problem specifications and system designs.',
-                'Analyze software usability and performance, suggesting changes to improve functionality or be able to deliver the important features on deploymentfor testing.',
-                'Assigning tasks to juniors and helping my co-workers to solve a particular problem.',
-                'Responsible in designing hiring posters, calling cards, company logo and creating wireframes using Figma for the projects.'
+                'Analyze software usability and performance, suggesting changes to improve functionality and deliver important features on deployment.',
+                'Delegated tasks and helped others to solve a particular problem.',
+                'Designed a hiring posters, calling cards, company logo and created wireframes using Figma for the projects.'
             ]
         },
         {
@@ -42,8 +42,8 @@ export default function Resume(screen: IScreenSize) {
             position: 'WEB DESIGNER / FRONT-END DEVELOPER',
             company: 'Mint05-Infuturo, Inc.',
             desc: [
-                'Helped in designing their HR portal site.',
-                'Responsible in doing the front-end design of the future project –a gamified e-learning system.'
+                'Enhanced HR portal site appearance.',
+                'Designed future project gamified e-learning system.'
             ]
         },
     ];
