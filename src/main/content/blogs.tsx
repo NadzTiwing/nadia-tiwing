@@ -9,12 +9,6 @@ import Typography from '@mui/material/Typography';
 import { viewSite } from '../../util/helper';
 
 export default function Portfolio(screen: IScreenSize) {
-    
-    // const viewSite = (url: string) => {
-    //     const newTab = window.open(url, '_blank', 'noopener,noreferrer');
-    //     if(newTab) newTab.opener = null;
-    // };
-
     const blogs = [
         {
             id: 'object-detector',
