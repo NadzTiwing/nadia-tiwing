@@ -13,7 +13,7 @@ export default function Portfolio(screen: IScreenSize) {
         {
             id: 'object-detector',
             imgUrl: './img/object-detector.JPG',
-            siteUrl: 'https://devdojo.com/mc4carpediem/simple-object-detector-with-nextjs',
+            siteUrl: 'https://devdojo.com/tiwingnadia/object-detector-web-app-using-reactjs',
             title: 'Simple Object Detector',
             content: 'A simple application that locates an object in the image using NextJS which can be also implemented in ReactJS.'
         },
