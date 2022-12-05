@@ -19,7 +19,7 @@ export default function Projects(screen: IScreenSize) {
             imgUrl: './img/text-o-matic.png',
             siteUrl: 'https://github.com/NadzTiwing/text-o-matic',
             title: 'Text-o-matic',
-            content: 'Web app that is that generates caption and checks spelling errors with OpenAI.',
+            content: 'Web app that generates caption and checks spelling errors with OpenAI.',
             ongoing: false
         },
         {
