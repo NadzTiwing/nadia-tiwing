@@ -12,9 +12,13 @@ export default function Main(){
         color: mainColor
     };
     theme.typography.h2 = {
+        //letterSpacing: 4,
+        color: 'white'
+    };
+    theme.typography.h3 = {
         fontFamily: titleFont,
-        letterSpacing: 1.5,
-        color: mainColor
+        letterSpacing: 4,
+        color: 'gray'
     };
     theme.typography.h4 = {
         fontFamily: titleFont,

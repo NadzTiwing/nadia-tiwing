@@ -12,7 +12,7 @@ export default function Resume(screen: IScreenSize) {
     const experiences = [
         {   
             id: 'netsuite-dev',
-            dateRange: 'May 2022 - Current',
+            dateRange: 'May 2022 - October 2022',
             position: 'SOFTWARE ENGINEER',
             company: 'Oracle Netsuite Philippines Corporation',
             desc: [
@@ -101,20 +101,16 @@ export default function Resume(screen: IScreenSize) {
                 <Typography variant='h2'>Work Experiences</Typography>
             </Box>
             { experiences.map(exp => (
-                <>
-                    <Box gridColumn={screen.isMobile ? "span 12":"span 3"}>
-                        <i>{ exp.dateRange }</i>  
-                    </Box>
-                    <Box gridColumn={screen.isMobile ? "span 12":"span 9"}>
-                        <Typography variant='h4' sx={{ color: 'primary.main' }}>{ exp.position }</Typography>
-                        <strong><i>{ exp.company }</i></strong>
-                        <ul>
-                            { exp.desc.map( (did, i) => (
-                                <li key={ exp.id+'-'+'list-'+i}>{ did }</li>
-                            )) }
-                        </ul>
-                    </Box>
-                </>
+                <Box gridColumn="span 12">
+                    <i>{ exp.dateRange }</i>  
+                    <Typography variant='h4' sx={{ color: 'primary.main' }}>{ exp.position }</Typography>
+                    <strong><i>{ exp.company }</i></strong>
+                    <ul>
+                        { exp.desc.map( (did, i) => (
+                            <li key={ exp.id+'-'+'list-'+i}>{ did }</li>
+                        )) }
+                    </ul>
+                </Box>
             )) }
 
             <Box gridColumn="span 12" sx={{ mt: 5 }}>
@@ -122,10 +118,10 @@ export default function Resume(screen: IScreenSize) {
             </Box>
             { schools.map(school => (
                 <>
-                    <Box gridColumn={screen.isMobile ? "span 12":"span 3"}>
+                    <Box gridColumn={screen.isMobile ? "span 12":"span 2"}>
                         <i>{ school.year }</i>  
                     </Box>
-                    <Box gridColumn={screen.isMobile ? "span 12":"span 9"}>
+                    <Box gridColumn={screen.isMobile ? "span 12":"span 10"}>
                         <Typography variant='h4' sx={{ color: 'primary.main' }}>{ school.name }</Typography>
                         <strong><i>{ school?.degree }</i></strong>
                         <ul>

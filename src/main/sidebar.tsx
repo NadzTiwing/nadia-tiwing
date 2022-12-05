@@ -141,29 +141,21 @@ export default function ResponsiveDrawer(props: Props) {
   const drawer = (
     <div className="bg-dark">
       <Avatar
-      alt="Remy Sharp"
+      alt="nadia-tiwing"
       src="./img/nadz.png"
       id='profile-pic'
       />
-      <Typography variant="h2" sx={{color:'primary.main'}} className='center'>NADIA A. TIWING</Typography>
-      <Typography variant="h4" sx={{color:'primary.main'}} className="center">Software Engineer</Typography>
-      {/* <Toolbar /> */}
-      <Divider />
       <Tabs
         orientation="vertical"
         value={value}
         onChange={evt => handleChange(evt)}
         aria-label="Sidebar"
-        sx={{ borderRight: 1, color:'primary.light', py:1 }}
+        sx={{  py:1 }}
         className='nav-links'
-        indicatorColor='primary'
       >
         {navLinks.map( (link, index) =>(
-          <Tab 
-          icon={<link.icon/>}
-          iconPosition="start"
+          <Tab
           label={link.title} {...a11yProps(link.index)} 
-          sx={{color:'primary.light', px:8, my:0}} 
           className='nav-links'
           />
         ))}
@@ -243,7 +235,11 @@ export default function ResponsiveDrawer(props: Props) {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, y: 5 }}
               > 
-                <Template title={link.title} details={link.content} isMobile={ isMobile } />
+                <Template 
+                title={link.title} 
+                details={link.content} 
+                isMobile={ isMobile }
+                />
               </motion.div>
             </AnimatePresence>
           </TabPanel>

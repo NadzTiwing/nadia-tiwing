@@ -1,4 +1,4 @@
-import { Grid, Divider, Box, Typography } from "@mui/material";
+import { Grid, Box, Typography } from "@mui/material";
 
 interface Content{
     title: string,
@@ -10,15 +10,7 @@ export default function Template(content: Content) {
     return(
         <Grid container spacing={0} justifyContent="flex-start" alignItems="flex-start" direction="column" sx={ content.isMobile ? { mt: 3} : { mt: 0}}>
             <Grid item xs={6}>
-                <Typography variant={'h1'}>{content.title}</Typography>
-                <Box
-                sx={{
-                    mt: 2,
-                    width: 50,
-                    height: 5,
-                    backgroundColor: 'primary.main',
-                }}
-                />
+                <Typography variant={'h3'} className="section-title">{content.title.toUpperCase()}</Typography>
             </Grid>
             <Grid>
                 <Box 

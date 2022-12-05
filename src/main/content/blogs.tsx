@@ -29,7 +29,7 @@ export default function Portfolio(screen: IScreenSize) {
     return(
         <>
         { blogs.map( blog => (
-            <Box gridColumn={screen.isMobile ? "span 12" : "span 4"} sx={{ mt: 3, mb: 14, px:1 }}  key={ blog.id }>
+            <Box gridColumn={screen.isMobile ? "span 12" : "span 5"} sx={{ mt: 3, mb: 14, px:1 }}  key={ blog.id }>
                 <Card sx={{ maxWidth: 345, p:2, bgcolor: 'primary.dark' }} className='customCard'>
                     <CardMedia
                         component="img"

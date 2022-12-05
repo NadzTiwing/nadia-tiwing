@@ -22,14 +22,14 @@ export default function Portfolio(screen: IScreenSize) {
             imgUrl: './img/mint05.JPG',
             siteUrl: 'https://hr.mintlang.com/hr_portal/',
             title: 'Mint05',
-            content: 'Part of the designing and front-end team that developed the HR Portal, a one-stop shop tool for all employees of Mint05/Infuturo, Inc..'
+            content: 'Part of the frontend development team that improved the HR Portal, a one-stop shop tool for all employees of Mint05/Infuturo, Inc.'
         },
     ];
 
     return(
         <>
         { samples.map( sample => (
-            <Box gridColumn={screen.isMobile ? "span 12" : "span 4"} sx={{ mt: 3, mb: 14, px:1 }}  key={ sample.id }>
+            <Box gridColumn={screen.isMobile ? "span 12" : "span 5"} sx={{ mt: 3, mb: 14, px:1 }}  key={ sample.id }>
                 <Card sx={{ maxWidth: 345, p:2, bgcolor: 'primary.dark' }} className='customCard'>
                     <CardMedia
                         component="img"
