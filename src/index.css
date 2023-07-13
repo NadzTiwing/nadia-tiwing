@@ -197,3 +197,7 @@ code {
   height: 100%;
   border: none!important;
 }
+
+.tool-name {
+  padding-right: 2px !important;
+}
