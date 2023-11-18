@@ -9,29 +9,27 @@ import Typography from '@mui/material/Typography';
 import { viewSite } from '../../util/helper';
 import { blogs } from "../../data/articles";
 
-export default function Portfolio(screen: IScreenSize) {
+export default function Blogs(screen: IScreenSize) {
+    const customWidth = screen.isMobile ? '100%' : '25rem'
     return(
-        <>
+    <Grid container spacing={0}>
         { blogs.map( blog => (
-            <Box gridColumn={screen.isMobile ? "span 12" : "span 5"} sx={{ mt: 3, mb: 14, px:1 }}  key={ blog.id }>
-                <Card sx={{ maxWidth: 345, p:2, bgcolor: 'primary.dark' }} className='customCard'>
-                    <CardMedia
-                        component="img"
-                        height="180"
-                        image={ blog.imgUrl }
-                        alt={ blog.id+"-img" }
-                    />
-                    <CardContent sx={{ color:'primary.light' }}>
-                        <Typography gutterBottom variant="h6" component="div">{ blog.title }</Typography>
-                        <Typography variant="body2" className="scrollable-body">{ blog.content }</Typography>
-                    </CardContent>
-                    <CardActions>
-                        <Button size="small" onClick={ () => viewSite(blog.siteUrl) }>View</Button>
-                    </CardActions>
-                </Card>
-            </Box>
+        <Card sx={{ p:2, bgcolor: 'primary.dark', mr: 2, mb: 2, width: customWidth }} className='customCard' key={ blog.id }>
+            <CardMedia
+                component="img"
+                height="180"
+                image={ blog.imgUrl }
+                alt={ blog.id+"-img" }
+            />
+            <CardContent sx={{ color:'primary.light' }}>
+                <Typography gutterBottom variant="h6" component="div">{ blog.title }</Typography>
+                <Typography variant="body2" className="scrollable-body">{ blog.content }</Typography>
+            </CardContent>
+            <CardActions>
+                <Button size="small" onClick={ () => viewSite(blog.siteUrl) }>View</Button>
+            </CardActions>
+        </Card>
         )) }
-        
-        </>
+        </Grid>
     );
 }

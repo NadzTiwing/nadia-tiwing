@@ -4,8 +4,8 @@ import { languages } from '../../data/me';
 
 export default function AboutMe(screen: IScreenSize) {
     return(
-        <>
-            <Box gridColumn="span 12" className="intro-box">
+        <Grid container spacing={0}>
+            <Grid item className="intro-box">
                 <div className="text-intro">
                     <Typography className="hi">HI THERE!</Typography>
                     <Typography className="name">I'M <span className="highlight">NADIA TIWING</span></Typography>
@@ -14,9 +14,11 @@ export default function AboutMe(screen: IScreenSize) {
                         I'm passionate in developing a software application and has a 4 years experience in developing, designing,  testing, and implementing a cutting-edge engineering solutions. Also, I am able to consult well with clients and enhances configuration for optimal customer satisfaction. I am skilled at team collaboration while working independently in remote environments.
                     </Typography>
                 </div>
-            </Box>
-            <Box gridColumn="span 12" className="skills" pb={5.05}>
-                <Typography className="hi">TECH SKILLS:</Typography>
+            </Grid>
+            <Grid item container className="skills">
+                <Grid item>
+                    <Typography className="hi">TECH SKILLS:</Typography>
+                </Grid>
                 <Grid container flexDirection="row" alignItems="center" justifyContent="start">
                     <Grid item pr={2}>
                         <Typography sx={{ opacity: "0.5"}}>Legends: </Typography>
@@ -29,14 +31,16 @@ export default function AboutMe(screen: IScreenSize) {
                         </Box>
                     </Grid>
                 </Grid>
-                <div className='languages'>
-                    {languages.map( lang => (
-                        <div className="legends" key={lang.name}>
-                            <span className={`custom-badge ${lang.level}`}></span><label className="txt">{lang.name}</label>
-                        </div>
-                    ))}
-                </div>
-            </Box>
-        </>
+                <Grid item>
+                    <div className='languages'>
+                        {languages.map( lang => (
+                            <div className="legends" key={lang.name}>
+                                <span className={`custom-badge ${lang.level}`}></span><label className="txt">{lang.name}</label>
+                            </div>
+                        ))}
+                    </div>
+                </Grid>
+            </Grid>
+        </Grid>
     );
 }

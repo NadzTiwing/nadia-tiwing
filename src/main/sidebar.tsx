@@ -94,7 +94,7 @@ export default function ResponsiveDrawer(props: Props) {
     {
       index:2,
       id:'projects',
-      title:'Projects',
+      title:'Projects for Fun',
       icon: AssignmentIcon,
       content: <Projects isMobile={ isMobile }/>
     },
@@ -126,7 +126,7 @@ export default function ResponsiveDrawer(props: Props) {
   };
 
   const handleResize = () => {
-    if (window.innerWidth < 720) {
+    if (window.innerWidth < 800) {
         setIsMobile(true);
     } else {
         setIsMobile(false);
@@ -225,7 +225,7 @@ export default function ResponsiveDrawer(props: Props) {
       </Box>
       <Box
         component="main"
-        sx={{ flexGrow: 1, py: 1, width: { sm: `calc(100% - ${drawerWidth}px)` }, bgcolor: 'primary.dark' }}
+        sx={{ flexGrow: 1, py: 1, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
         {/* <Toolbar /> */}
         {navLinks.map( (link, index) =>(  
@@ -236,8 +236,9 @@ export default function ResponsiveDrawer(props: Props) {
                 animate={{ opacity: 1, y: 5 }}
               > 
                 <Template 
+                id={link.id}
                 title={link.title} 
-                details={link.content} 
+                details={link.content}
                 isMobile={ isMobile }
                 />
               </motion.div>

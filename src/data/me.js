@@ -34,6 +34,10 @@ const languages = [
     level: level[3],
   },
   {
+    name: "VueJS",
+    level: level[2],
+  },
+  {
     name: "ExpressJs",
     level: level[2],
   },
@@ -58,12 +62,16 @@ const languages = [
     level: level[1],
   },
   {
-    name: "VueJS",
+    name: "React Native",
     level: level[1],
   },
   {
-    name: "React Native",
-    level: level[1],
+    name: "Jest",
+    level: level[2],
+  },
+  {
+    name: "Jasmine",
+    level: level[2],
   },
   {
     name: "Figma",
