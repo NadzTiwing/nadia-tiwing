@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/nadia-tiwing/static/css/main.c5d13f4c.css",
-    "main.js": "/nadia-tiwing/static/js/main.400ee575.js",
+    "main.js": "/nadia-tiwing/static/js/main.8624788a.js",
     "static/js/787.f2a0fa2f.chunk.js": "/nadia-tiwing/static/js/787.f2a0fa2f.chunk.js",
     "index.html": "/nadia-tiwing/index.html",
     "main.c5d13f4c.css.map": "/nadia-tiwing/static/css/main.c5d13f4c.css.map",
-    "main.400ee575.js.map": "/nadia-tiwing/static/js/main.400ee575.js.map",
+    "main.8624788a.js.map": "/nadia-tiwing/static/js/main.8624788a.js.map",
     "787.f2a0fa2f.chunk.js.map": "/nadia-tiwing/static/js/787.f2a0fa2f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c5d13f4c.css",
-    "static/js/main.400ee575.js"
+    "static/js/main.8624788a.js"
   ]
 }
