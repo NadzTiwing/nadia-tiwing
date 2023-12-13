@@ -11,7 +11,7 @@ const languages = [
   },
   {
     name: "Typescript",
-    level: level[2],
+    level: level[3],
   },
   {
     name: "HTML5",
@@ -84,6 +84,17 @@ const languages = [
 ];
 
 const experiences = [
+  {
+    id: "solidleisure-front-dev",
+    dateRange: "August 2023 - December 2023",
+    position: "FRONTEND DEVELOPER",
+    company: "SolidLeisure Solutions Inc.",
+    desc: [
+      "Utilized Vue framework for enhancing platform performance and real-time data updates in their existing system, Backoffice System for the Game Apps.",
+      "Revamped their official website using Vue 3, Ionic and firebase.",
+      "Led the integration of unit testing for better code quality.",
+    ],
+  },
   {
     id: "somi-front-dev",
     dateRange: "January 2023 - June 2023",
