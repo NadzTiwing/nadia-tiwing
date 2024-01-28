@@ -39,13 +39,23 @@ const projects = [
     ongoing: false,
   },
   {
+    id: "simple-chat-app",
+    imgUrl: "./img/chat-app.png",
+    siteUrl: "https://insta-chat-5zj6dolfg-nadztiwing.vercel.app",
+    title: "Simple Chat App",
+    content:
+      "A simple chat app where a user can create a chat room and start a conversation with other people worldwide.",
+    tools: ["ReactJS,", "Firebase,", "Typescript"],
+    ongoing: false,
+  },
+  {
     id: "card-game-system",
     imgUrl: "./img/projects-ongoing.jpg",
     siteUrl: "#",
     title: "Superhero Card Game",
     content:
       "A simple game where a user select a card to play against an AI player.",
-    tools: [],
+    tools: ["Vue 3"],
     ongoing: true,
   },
 ];

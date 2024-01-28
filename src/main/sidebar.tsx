@@ -82,7 +82,7 @@ export default function ResponsiveDrawer(props: Props) {
       id:'about_me',
       title:'About Me',
       icon: PersonIcon,
-      content: <AboutMe isMobile={ isMobile }/>
+      content: <AboutMe/>
     },
     {
       index:1,

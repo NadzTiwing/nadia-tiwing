@@ -1,5 +1,5 @@
-import { Grid, Box } from "@mui/material";
-import * as React from 'react';
+import { Grid } from "@mui/material";
+import { Suspense } from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -7,6 +7,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { projects } from "../../data/samples";
+import Loader from "../components/loader";
 
 export default function Projects(screen: IScreenSize) {
     const viewSite = (url: string) => {
@@ -18,12 +19,14 @@ export default function Projects(screen: IScreenSize) {
         <Grid container spacing={0}>
             { projects.map( project => (
                 <Card sx={{ p:2, bgcolor: 'primary.dark', mr: 2, mb: 2, width: customWidth }} className='customCard' key={ project.id }>
-                    <CardMedia
-                        component="img"
-                        height="180"
-                        image={ project.imgUrl }
-                        alt={ project.id+"-img" }
-                    />
+                    <Suspense fallback={<Loader />}>
+                        <CardMedia
+                            component="img"
+                            height="180"
+                            image={ project.imgUrl }
+                            alt={ project.id+"-img" }
+                        />
+                    </Suspense>
                     <CardContent sx={{ color:'primary.light' }}>
                         <Typography gutterBottom variant="h5" component="div">{ project.title }</Typography>
                         <Typography variant="body2" className="scrollable-body">{ project.content }</Typography>

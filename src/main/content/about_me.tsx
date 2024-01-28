@@ -2,7 +2,7 @@
 import { Grid, Typography, Box } from "@mui/material";
 import { languages } from '../../data/me';
 
-export default function AboutMe(screen: IScreenSize) {
+export default function AboutMe() {
     return(
         <Grid container spacing={0}>
             <Grid item className="intro-box">
