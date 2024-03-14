@@ -41,7 +41,7 @@ const projects = [
   {
     id: "simple-chat-app",
     imgUrl: "./img/chat-app.png",
-    siteUrl: "https://insta-chat-szcl-eeka4oy89-nadztiwings-projects.vercel.app",
+    siteUrl: "https://github.com/NadzTiwing/InstaChat/tree/main/instachat-app",
     title: "Simple Chat App",
     content:
       "A simple chat app where a user can create a chat room and start a conversation with other people worldwide.",
