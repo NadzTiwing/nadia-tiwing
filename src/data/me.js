@@ -62,6 +62,10 @@ const languages = [
     level: level[1],
   },
   {
+    name: "Flask",
+    level: level[1],
+  },
+  {
     name: "React Native",
     level: level[1],
   },
@@ -84,6 +88,16 @@ const languages = [
 ];
 
 const experiences = [
+  {
+    id: "edapt-soft-engr",
+    dateRange: "January 2024 - Current",
+    position: "SOFTWARE ENGINEER",
+    company: "Edapt Technologies",
+    desc: [
+      "Developed Quizius, a learning gamification app, from the ground using React, TypeScript, OpenAI API, and Firebase.",
+      "Designed and implemented wireframes to guide the development process."
+    ],
+  },
   {
     id: "solidleisure-front-dev",
     dateRange: "August 2023 - December 2023",
