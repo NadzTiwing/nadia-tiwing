@@ -49,6 +49,16 @@ const projects = [
     ongoing: false,
   },
   {
+    id: "simple-weather-app",
+    imgUrl: "./img/django-weather-app.png",
+    siteUrl: "https://github.com/NadzTiwing/django-weather-app",
+    title: "Simple Weather App",
+    content:
+      "A simple and user-friendly web application that lets you search and view real-time weather details for cities around the world.",
+    tools: ["Django,", "Python,", "HTML,", "CSS,", "JavaScript"],
+    ongoing: false,
+  },
+  {
     id: "card-game-system",
     imgUrl: "./img/projects-ongoing.jpg",
     siteUrl: "#",

@@ -66,6 +66,10 @@ const languages = [
     level: level[1],
   },
   {
+    name: "Django",
+    level: level[1],
+  },
+  {
     name: "React Native",
     level: level[1],
   },
@@ -79,7 +83,7 @@ const languages = [
   },
   {
     name: "Figma",
-    level: level[2],
+    level: level[3],
   },
   {
     name: "GIT",
@@ -90,12 +94,13 @@ const languages = [
 const experiences = [
   {
     id: "edapt-soft-engr",
-    dateRange: "January 2024 - Current",
+    dateRange: "January 2024 - March 2025",
     position: "SOFTWARE ENGINEER",
     company: "Edapt Technologies",
     desc: [
       "Developed Quizius, a learning gamification app, from the ground using React, TypeScript, OpenAI API, and Firebase.",
-      "Designed and implemented wireframes to guide the development process."
+      "Designed and implemented wireframes using Figma to guide the development process.",
+      "Implemented robust unit testing with Jest, validating component behavior and application logic.",
     ],
   },
   {
@@ -134,7 +139,7 @@ const experiences = [
   },
   {
     id: "magicsoft-dev",
-    dateRange: "January 2020 - May 2022",
+    dateRange: "July 2019 - May 2022",
     position: "FULLSTACK DEVELOPER",
     company: "Magicsoft International Software Development and Services",
     desc: [
@@ -144,15 +149,7 @@ const experiences = [
       "Analyze software usability and performance, suggesting changes to improve functionality and deliver the important features on deployment for testing.",
       "Delegated tasks and helped others to solve a particular problem.",
       "Designed a hiring posters, calling cards, company logo and created wireframes using Figma for design enhancements",
-      "Involved in polishing the client-side of the Productivity Employee Tracker system using jQuery, HTML/CSS, javascript and ajax",
-    ],
-  },
-  {
-    id: "mint05-dev",
-    dateRange: "July 2019 - December 2019",
-    position: "FRONTEND DEVELOPER",
-    company: "Mint05-Infuturo, Inc.",
-    desc: [
+      "Involved in polishing the client-side of the Productivity Employee Tracker system using jQuery, HTML/CSS, NodeJs/ExpressJs and ajax",
       "Contributed in the development of the Human Resources portal site using jQuery, HTML/CSS and Javascript",
       "Spearheaded the design of wireframes for upcoming projects.",
     ],
