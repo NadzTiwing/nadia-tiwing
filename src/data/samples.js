@@ -1,19 +1,53 @@
 const samples = [
   {
     id: "mint09-site",
-    imgUrl: "./img/mint09-site.png",
-    siteUrl: "https://mint09.com/",
+    displayType: "video",
+    mediaUrl: "./img/mint09.mp4",
+    siteUrl: "https://mint09.com",
     title: "Mint09",
     content:
-      "Part of the Magicsoft team in developing of this e-learning system.",
+      "Part of the Magicsoft team in developing of this e-learning system tailored for the Korean Students.",
+    techStack: ["NextJS", "Typescript", "Prisma", "Node/ExpressJS", "Socket.IO", "MySQL", "NGinx"]
   },
   {
     id: "mint05-hr-site",
-    imgUrl: "./img/mint05.JPG",
+    displayType: "image",
+    mediaUrl: "./img/mint05.JPG",
     siteUrl: "https://hr.mintlang.com/hr_portal/",
     title: "Mint05",
     content:
-      "Part of the frontend development team that improved the HR Portal, a one-stop shop tool for all employees of Mint05/Infuturo, Inc.",
+      "Part of the Dev team that improved the HR Portal, a one-stop shop tool for all employees of Mint05/Infuturo, Inc.",
+    techStack: ["JQuery", "Javascript", "Node/ExpressJS", "MySQL"]
+  },
+  {
+    id: "entvas-fluffys-webapp",
+    displayType: "video",
+    imgUrl: "./videos/flyuffys-admin.mp4",
+    siteUrl: "https://fluffyshibachi.com",
+    title: "Fluffy's Mobile Hibachi",
+    content:
+      "Developed Website and Catering Booking System for Fluffy's Mobile Hibachi.",
+    techStack: ["Typescript", "NextJS", "MySQL", "AWS", "DynamoDB", "Square API", "Vitest"]
+  },
+  {
+    id: "edapt-quizius-app",
+    displayType: "video",
+    imgUrl: "./videos/quizius.mp4",
+    siteUrl: "https://quizi.us/practice",
+    title: "Quizius",
+    content:
+      "Study Tool App for the Law students with AI integration",
+    techStack: ["Typescript", "ReactJS", "Firebase", "GCP", "OpenAI API", "Jest"]
+  },
+  {
+    id: "seafair-sms",
+    displayType: "video",
+    imgUrl: "./videos/sms.mp4",
+    siteUrl: "",
+    title: "Seafair Safety Management System",
+    content:
+      "Vessel Operations Software System for Seafair Yachts",
+    techStack: ["Typescript", "NextJS", "Supabase", "PostgreSQL", "Vitest"]
   },
 ];
 

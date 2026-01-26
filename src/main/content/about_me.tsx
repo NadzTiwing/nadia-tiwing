@@ -11,7 +11,7 @@ export default function AboutMe() {
                     <Typography className="name">I'M <span className="highlight">NADIA TIWING</span></Typography>
                     <Typography className="job-title"> SOFTWARE DEVELOPER </Typography>
                     <Typography className="summary" >
-                        I'm passionate in developing a software application and has a 5 years experience in developing, designing,  testing, and implementing a cutting-edge engineering solutions. Also, I am able to consult well with clients and enhances configuration for optimal customer satisfaction. I am skilled at team collaboration while working independently in remote environments.
+                        I love developing a software applications that help people's lives easier and has more than 6 years experience in building, designing,  testing, and implementing a cutting-edge engineering solutions. Also, I am able to consult well with clients and enhances configuration for optimal customer satisfaction. I am skilled at team collaboration while working independently in remote environments.
                     </Typography>
                 </div>
             </Grid>

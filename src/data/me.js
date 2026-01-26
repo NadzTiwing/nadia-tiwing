@@ -27,7 +27,7 @@ const languages = [
   },
   {
     name: "NextJs",
-    level: level[2],
+    level: level[3],
   },
   {
     name: "ReactJs",
@@ -50,12 +50,20 @@ const languages = [
     level: level[2],
   },
   {
+    name: "PostgreSQL",
+    level: level[2],
+  },
+  {
+    name: "Supabase",
+    level: level[2],
+  },
+  {
     name: "MongoDB",
     level: level[1],
   },
   {
-    name: "PostgreSQL",
-    level: level[1],
+    name: "Firebase",
+    level: level[2],
   },
   {
     name: "Python",
@@ -71,7 +79,7 @@ const languages = [
   },
   {
     name: "React Native",
-    level: level[1],
+    level: level[2],
   },
   {
     name: "Jest",
@@ -89,18 +97,46 @@ const languages = [
     name: "GIT",
     level: level[2],
   },
+  {
+    name: "AWS Services",
+    level: level[1],
+  },
+  {
+    name: "n8n",
+    level: level[2],
+  },
+  {
+    name: "zapier",
+    level: level[2],
+  },
+  {
+    name: "Webflow",
+    level: level[1],
+  }
 ];
 
 const experiences = [
+  {
+    id: "seafair-fullstack-dev",
+    dateRange: "May 2025 - Present",
+    position: "Fullstack Developer",
+    company: "Edapt Technologies",
+    desc: [
+      "Architected and migrated a legacy Vessel Safety Management System to a modern web platform, independently driving the transition to a high-performance stack including React.js, Next.js, TypeScript, Supabase and PostgreSQL.",
+      "Independently overhauled legacy UI/UX into intuitive, user-centric dashboards while establishing rigorous testing standards with Vitest to ensure high code reliability and seamless system navigation. ",
+      "Functioned as Technical Lead for the Visitors Management System, providing code reviews and mentorship to junior developers while overseeing the end-to-end development lifecycle.",
+      "Optimized the official Seafair website and internal operations by developing automated workflows via n8n and Zapier, while managing frontend enhancements within Webflow. "
+    ],
+  },
   {
     id: "edapt-soft-engr",
     dateRange: "January 2024 - March 2025",
     position: "SOFTWARE ENGINEER",
     company: "Edapt Technologies",
     desc: [
-      "Developed Quizius, a learning gamification app, from the ground using React, TypeScript, OpenAI API, and Firebase.",
-      "Designed and implemented wireframes using Figma to guide the development process.",
-      "Implemented robust unit testing with Jest, validating component behavior and application logic.",
+      "Developed Quizius, a learning gamification app, from the ground up—translating product requirements into interactive web experiences by designing wireframes in Figma and implementing them with React, TypeScript, Firebase, and the OpenAI API",
+      "Implemented robust unit testing using Jest.",
+      "Mentored and provided hands-on guidance to an intern, offering regular tutoring on core software development practices, code reviews, and debugging techniques",
     ],
   },
   {

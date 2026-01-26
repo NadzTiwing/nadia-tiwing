@@ -12,7 +12,7 @@ export default function Template(content: Content) {
         'about_me': '100vh',
         'resume': '100%',
         'projects': '100%',
-        'portfolio': '100vh',
+        'portfolio': '100%',
         'blogs': '100vh'
     }
 
