@@ -1,8 +1,8 @@
 const samples = [
   {
     id: "mint09-site",
-    displayType: "video",
-    mediaUrl: "./img/mint09.mp4",
+    displayType: "image",
+    mediaUrl: "./img/mint09.gif",
     siteUrl: "https://mint09.com",
     title: "Mint09",
     content:
@@ -14,15 +14,15 @@ const samples = [
     displayType: "image",
     mediaUrl: "./img/mint05.JPG",
     siteUrl: "https://hr.mintlang.com/hr_portal/",
-    title: "Mint05",
+    title: "HR Portal",
     content:
       "Part of the Dev team that improved the HR Portal, a one-stop shop tool for all employees of Mint05/Infuturo, Inc.",
     techStack: ["JQuery", "Javascript", "Node/ExpressJS", "MySQL"]
   },
   {
     id: "entvas-fluffys-webapp",
-    displayType: "video",
-    imgUrl: "./videos/flyuffys-admin.mp4",
+    displayType: "image",
+    imgUrl: "./img/flyuffys-admin-gif.gif",
     siteUrl: "https://fluffyshibachi.com",
     title: "Fluffy's Mobile Hibachi",
     content:
@@ -31,8 +31,8 @@ const samples = [
   },
   {
     id: "edapt-quizius-app",
-    displayType: "video",
-    imgUrl: "./videos/quizius.mp4",
+    displayType: "image",
+    imgUrl: "./img/quizius.gif",
     siteUrl: "https://quizi.us/practice",
     title: "Quizius",
     content:
@@ -41,8 +41,8 @@ const samples = [
   },
   {
     id: "seafair-sms",
-    displayType: "video",
-    imgUrl: "./videos/sms.mp4",
+    displayType: "image",
+    imgUrl: "./img/sms.gif",
     siteUrl: "",
     title: "Seafair Safety Management System",
     content:
@@ -59,7 +59,7 @@ const projects = [
     title: "Text-o-matic",
     content:
       "Web app that generates caption and checks spelling errors with OpenAI.",
-    tools: ["NextJS,", "OpenAI API"],
+    tools: ["NextJS", "OpenAI API"],
     ongoing: false,
   },
   {
@@ -67,7 +67,7 @@ const projects = [
     imgUrl: "./img/pic-share.png",
     siteUrl: "https://github.com/NadzTiwing/picshare",
     title: "Picshare",
-    tools: ["NextJS,", "MongoDB Atlas,", "Cloudinary"],
+    tools: ["NextJS", "MongoDB Atlas", "Cloudinary"],
     content:
       "A simple app that saves, deletes and retrieves photos using Cloudinary.",
     ongoing: false,
@@ -79,7 +79,7 @@ const projects = [
     title: "Simple Chat App",
     content:
       "A simple chat app where a user can create a chat room and start a conversation with other people worldwide.",
-    tools: ["ReactJS,", "Firebase,", "Typescript"],
+    tools: ["ReactJS", "Firebase", "Typescript"],
     ongoing: false,
   },
   {
@@ -89,7 +89,7 @@ const projects = [
     title: "Simple Weather App",
     content:
       "A simple and user-friendly web application that lets you search and view real-time weather details for cities around the world.",
-    tools: ["Django,", "Python,", "HTML,", "CSS,", "JavaScript"],
+    tools: ["Django", "Python", "HTML", "CSS", "JavaScript"],
     ongoing: false,
   },
   {

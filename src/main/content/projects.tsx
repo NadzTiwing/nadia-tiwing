@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid, Chip } from "@mui/material";
 import { Suspense } from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -44,12 +44,21 @@ export default function Projects(screen: IScreenSize) {
             <Typography variant="body2" className="scrollable-body">
               {project.content}
             </Typography>
-            <Typography variant="caption">
+            <Typography variant="caption" sx={{ marginRight: "0.5em" }}>
               Tools used:
-              {project.tools.map((tool) => (
-                <span className="tool-name">{tool}</span>
-              ))}
             </Typography>
+            {project.tools.map((tool) => (
+              <Chip
+                label={tool}
+                variant="outlined"
+                sx={{
+                  color: "primary.light",
+                  borderColor: "primary.main",
+                  fontSize: "0.5em",
+                  marginRight: "0.5em",
+                }}
+              />
+            ))}
           </CardContent>
           <CardActions>
             {project.ongoing ? (

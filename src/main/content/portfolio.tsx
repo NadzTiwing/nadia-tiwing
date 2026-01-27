@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid, Chip } from "@mui/material";
 import { Suspense } from "react";
 import Loader from "../components/loader";
 import Card from "@mui/material/Card";
@@ -48,6 +48,23 @@ export default function Portfolio(screen: IScreenSize) {
             <Typography variant="body2" className="scrollable-body">
               {sample.content}
             </Typography>
+
+            <Typography variant="caption" sx={{ marginRight: "0.5em" }}>
+              Tech stacks:
+            </Typography>
+
+            {sample.techStack.map((tech) => (
+              <Chip
+                label={tech}
+                variant="outlined"
+                sx={{
+                  color: "primary.light",
+                  borderColor: "primary.main",
+                  fontSize: "0.5em",
+                  marginRight: "0.5em",
+                }}
+              />
+            ))}
           </CardContent>
           {sample.siteUrl && (
             <CardActions>
