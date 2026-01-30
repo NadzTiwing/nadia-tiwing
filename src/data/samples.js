@@ -22,7 +22,7 @@ const samples = [
   {
     id: "entvas-fluffys-webapp",
     displayType: "image",
-    imgUrl: "./img/fluffys-admin.gif",
+    mediaUrl: "./img/fluffys-admin.gif",
     siteUrl: "https://fluffyshibachi.com",
     title: "Fluffy's Mobile Hibachi",
     content:
@@ -32,7 +32,7 @@ const samples = [
   {
     id: "edapt-quizius-app",
     displayType: "image",
-    imgUrl: "./img/quizius.gif",
+    mediaUrl: "./img/quizius.gif",
     siteUrl: "https://quizi.us/practice",
     title: "Quizius",
     content:
@@ -42,7 +42,7 @@ const samples = [
   {
     id: "seafair-sms",
     displayType: "image",
-    imgUrl: "./img/sms.gif",
+    mediaUrl: "./img/sms.gif",
     siteUrl: "",
     title: "Seafair Safety Management System",
     content:
