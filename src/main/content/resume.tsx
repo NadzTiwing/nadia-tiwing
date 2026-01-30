@@ -65,12 +65,13 @@ export default function Resume(screen: IScreenSize) {
                     </Box>
                 </>
             )) }
-            <Box gridColumn="span 12" sx={{ mt: 5 }}>
-                <Link href="./cv_resume_NadiaTiwing_WebDev.pdf" target="_blank" rel="noopener"  >
-                    <Typography variant='body1' sx={{ color: 'yellow' }}>Download Resume</Typography>
+            {/* <Box gridColumn="span 12" sx={{ mt: 5 }}>
+                <Link href="./cv_resume_NadiaTiwing_WebDev.pdf" target="_blank" rel="noopener" 
+                style={{"backgroundColor": "red"}} >
+                    <Typography variant='body1' sx={{ color: 'white' }}>Download Resume</Typography>
                 </Link>
                 
-            </Box>
+            </Box> */}
         </>
     );
 }

@@ -94,14 +94,14 @@ export default function ResponsiveDrawer(props: Props) {
     {
       index:2,
       id:'projects',
-      title:'Projects for Fun',
+      title:'Fun Projects',
       icon: AssignmentIcon,
       content: <Projects isMobile={ isMobile }/>
     },
     {
       index:3,
       id:'portfolio',
-      title:'Portfolio',
+      title:'Work Projects',
       icon: FactCheckIcon,
       content: <Portfolio isMobile={ isMobile }/>
     },

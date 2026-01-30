@@ -22,7 +22,7 @@ const samples = [
   {
     id: "entvas-fluffys-webapp",
     displayType: "image",
-    imgUrl: "./img/flyuffys-admin-gif.gif",
+    imgUrl: "./img/fluffys-admin.gif",
     siteUrl: "https://fluffyshibachi.com",
     title: "Fluffy's Mobile Hibachi",
     content:
@@ -96,9 +96,9 @@ const projects = [
     id: "card-game-system",
     imgUrl: "./img/projects-ongoing.jpg",
     siteUrl: "#",
-    title: "Superhero Card Game",
+    title: "The Triangle game",
     content:
-      "A simple game where a user select a card to play against an AI player.",
+      "A dice-powered twist on the classic 'Dots and Boxes' game",
     tools: ["Vue 3"],
     ongoing: true,
   },
