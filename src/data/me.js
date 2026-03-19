@@ -120,7 +120,7 @@ const experiences = [
     id: "seafair-fullstack-dev",
     dateRange: "May 2025 - Present",
     position: "Fullstack Developer",
-    company: "Edapt Technologies",
+    company: "Seafair Yachts",
     desc: [
       "Architected and migrated a legacy Vessel Safety Management System to a modern web platform, independently driving the transition to a high-performance stack including React.js, Next.js, TypeScript, Supabase and PostgreSQL.",
       "Independently overhauled legacy UI/UX into intuitive, user-centric dashboards while establishing rigorous testing standards with Vitest to ensure high code reliability and seamless system navigation. ",
