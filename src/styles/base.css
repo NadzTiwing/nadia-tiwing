@@ -1,0 +1,80 @@
+/* Reset + base typography */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	font-family: var(--font-sans);
+	font-size: 0.975rem;
+	line-height: 1.7;
+	letter-spacing: -0.01em;
+	color: var(--text);
+	background-color: var(--ink);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	line-height: 1.15;
+	letter-spacing: -0.03em;
+	color: var(--text);
+}
+
+h1 {
+	font-size: clamp(2.2rem, 5vw, 3.2rem);
+	font-weight: 800;
+}
+h2 {
+	font-size: clamp(1.5rem, 3vw, 2rem);
+	font-weight: 700;
+}
+
+a {
+	color: var(--orange-soft);
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+a:hover {
+	color: var(--orange);
+}
+
+p {
+	color: var(--text-dim);
+}
+
+code,
+.mono {
+	font-family: var(--font-mono);
+}
+
+::selection {
+	background: var(--orange-deep);
+	color: #fff;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	background: var(--ink-2);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--brown);
+	border-radius: var(--radius-pill);
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--orange-deep);
+}

@@ -1,0 +1,43 @@
+/* Design tokens — dark-only glassmorphism / cyber-futuristic theme */
+:root {
+	/* Brand palette: orange + brown + complementary black */
+	--orange: #ff9e4f;
+	--orange-deep: #d96a1c;
+	--orange-soft: #ffc18a;
+	--brown: #6b4a32;
+	--brown-deep: #3a281b;
+	--ink: #0d0907; /* darker warm black */
+	--ink-2: #141010;
+
+	/* Text */
+	--text: #f3e9df;
+	--text-dim: #c7b4a4;
+	--text-faint: #94806f;
+
+	/* Glass surfaces */
+	--glass: rgba(40, 28, 19, 0.45);
+	--glass-strong: rgba(48, 33, 22, 0.62);
+	--glass-border: rgba(255, 158, 79, 0.22);
+	--glass-border-soft: rgba(255, 193, 138, 0.12);
+	--blur: 16px;
+
+	/* Effects */
+	--glow: 0 0 24px rgba(255, 158, 79, 0.25);
+	--shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+	--ring: 0 0 0 1px var(--glass-border);
+
+	/* Shape */
+	--radius: 16px;
+	--radius-sm: 10px;
+	--radius-pill: 999px;
+
+	/* Type
+	   JetBrains Mono  — body, headings, paragraphs (humanist mono; comfortable for reading)
+	   Departure Mono  — UI chrome: badges, nav labels, section tags, code (pixel-art cyber accent) */
+	--font-sans: 'JetBrains Mono', 'Courier New', monospace;
+	--font-mono: 'Departure Mono', monospace;
+
+	/* Gradients */
+	--grad-accent: linear-gradient(135deg, var(--orange) 0%, var(--orange-deep) 100%);
+	--grad-glass: linear-gradient(135deg, rgba(255, 193, 138, 0.08), rgba(107, 74, 50, 0.04));
+}
