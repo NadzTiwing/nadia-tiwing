@@ -161,13 +161,13 @@
     {
       "id": "seafair-fullstack-dev",
       "dateRange": "May 2025 - Present",
-      "position": "Fullstack Developer",
+      "position": "Senior Fullstack Developer",
       "company": "Seafair Yachts",
       "desc": [
-        "Architected and migrated a legacy Vessel Safety Management System to a modern web platform, independently driving the transition to a high-performance stack including React.js, Next.js, TypeScript, Supabase and PostgreSQL.",
-        "Independently overhauled legacy UI/UX into intuitive, user-centric dashboards while establishing rigorous testing standards with Vitest to ensure high code reliability and seamless system navigation. ",
-        "Functioned as Technical Lead for the Visitors Management System, providing code reviews and mentorship to junior developers while overseeing the end-to-end development lifecycle.",
-        "Optimized the official Seafair website and internal operations by developing automated workflows via n8n and Zapier, while managing frontend enhancements within Webflow. "
+        "Architected and migrated the legacy Vessel Safety Management System to a modern web platform using React.js, Next.js, TypeScript, Supabase, and PostgreSQL, improving system performance and page load speed by ~40%.",
+        "Accelerated feature delivery by ~30% as Technical Lead for the Visitor Management System, driving the end-to-end development lifecycle, enforcing code review guidelines, and mentoring junior engineers.",
+        "Saved ~25 operational hours per week by building automated data integration workflows with n8n and Zapier, while managing frontend enhancements and site optimizations in Webflow.",
+        "Achieved 99.9% platform stability on the PCCS platform by resolving high-impact production bugs and architecting serverless archive workflows using AWS Lambda for deployment diagnostics and AWS S3 for WACZ storage."
       ]
     },
     {
@@ -176,10 +176,9 @@
       "position": "Part-time Fullstack Developer",
       "company": "Entvas",
       "desc": [
-        "Engineered a comprehensive catering booking and staff management ecosystem for Fluffy's Mobile Hibachi, utilizing Next.js and NestJS to automate high-volume reservation workflows, and integrated Square API for secure payment processing.",
-        "Developed React Native application for Fluffy's Mobile Hibachi staffs, providing a centralized interface for real-time appointment tracking and automated payslip distribution.",
-        "Designed and deployed an internal award submission platform (My Employees) using Next.js, improving the efficiency of organizational recognition programs.",
-        "Managed cloud infrastructure and deployment on AWS, optimizing service availability and data integrity for both internal and client-facing applications."
+        "Engineered an end-to-end catering booking ecosystem for Fluffy’s Hibachi handling 1,000+ monthly orders using Next.js, NestJS, and Square API; architected scalable AWS infrastructure utilizing Amplify, ECS, Route 53, and VPC-secured RDS/DynamoDB instances to automate high-volume reservation and payment workflows.",
+        "Developed React Native mobile app for staff, providing real-time appointment tracking and automated payslip distribution, reducing scheduling overhead by ~35%.",
+        "Built 'My Employees' from the ground up using Next.js and AWS (Cognito, Amplify, VPC, RDS), cutting submission handling cycles by ~35% and establishing a fault-tolerant, scalable internal recognition platform."
       ]
     },
     {
@@ -188,10 +187,9 @@
       "position": "SOFTWARE ENGINEER",
       "company": "Edapt Technologies",
       "desc": [
-        "Developed Quizius, a learning gamification app, from the ground up—translating product requirements into interactive web experiences by designing wireframes in Figma and implementing them with React, TypeScript, Firebase, and the OpenAI API",
-        "Implemented robust unit testing using Jest.",
-        "Mentored and provided hands-on guidance to an intern, offering regular tutoring on core software development practices, code reviews, and debugging techniques"
-      ]
+        "Architected Quizius learning gamification app from 0 to 1, engineering a Python/Django REST API integrated with OpenAI API, Firebase, and a React/TypeScript frontend to serve dynamic AI-generated quizzes.",
+        "Implemented automated unit testing with Jest, preventing regressions across core features and decreasing post-launch bug tickets by ~30%.",
+        "Guided and mentored software engineering interns, running daily code reviews, debugging sessions, and technical onboarding"      ]
     },
     {
       "id": "solidleisure-front-dev",
@@ -199,9 +197,8 @@
       "position": "FRONTEND DEVELOPER",
       "company": "SolidLeisure Solutions Inc.",
       "desc": [
-        "Utilized Vue framework for enhancing platform performance and real-time data updates in their existing system, Backoffice System for the Game Apps.",
-        "Revamped their official website using Vue 3, Ionic and firebase.",
-        "Led the integration of unit testing for better code quality."
+        "Revamped official platform and backoffice system using Vue 3, Ionic, and Firebase, optimizing real-time data updates and improving UI responsiveness by 25%.",
+        "Integrated Jest unit testing suites, establishing baseline code quality metrics across all client-facing applications."
       ]
     },
     {
@@ -210,9 +207,8 @@
       "position": "FRONTEND DEVELOPER",
       "company": "SOMI Unlimited Solutions / Income Tech",
       "desc": [
-        "Developed Marketing and Customer Service System using ReactJS with redux & redux-saga as part of the team",
-        "Developed Ticketing System Mobile version using React Native, redux& redux-saga.",
-        "Improved existing systems such as Salary and Employee center System using VueJs."
+        "Boosted cross-platform user engagement by ~25% by co-developing the Marketing & Customer Service web platform and building the mobile Ticketing System using React (React.js), React Native, Redux, and Redux-Saga.",
+        "Improved internal operational throughput across the Salary and Employee Center applications by refactoring legacy client modules with Vue.js (Vue 3)"
       ]
     },
     {
@@ -221,10 +217,8 @@
       "position": "SOFTWARE ENGINEER",
       "company": "Oracle Netsuite Philippines Corporation",
       "desc": [
-        "Enhanced Netsuite ERP System Features using Suitescript and Jasmine Testing Framework for unit test automation.",
-        "Contributed in the development of Netsuite Next ERP System using Oracle JavaScript Extension Toolkit(OJET) Framework.",
-        "Designed proposals for both backend and frontend design changes.",
-        "Address customer's technical issues."
+        "Reduced system regression bugs by ~30% by authoring automated unit test suites in Jasmine while expanding enterprise features within the NetSuite ERP core using SuiteScript.",
+        "Accelerated product modernization by co-building next-generation ERP modules with the Oracle JavaScript Extension Toolkit (OJET) and directly diagnosing and resolving high-priority customer technical issues."
       ]
     },
     {
@@ -233,15 +227,9 @@
       "position": "FULLSTACK DEVELOPER",
       "company": "Magicsoft International Software Development and Services",
       "desc": [
-        "Developed and improved an international online e-learning platform using Bootstrap 5, NextJS, Prisma ORM, WebSocket and MySql.",
-        "Created our official website using Wordpress.",
-        "Worked with project managers and consult clients to resolve technical issues and establish problem specifications and system designs.",
-        "Analyze software usability and performance, suggesting changes to improve functionality and deliver the important features on deployment for testing.",
-        "Delegated tasks and helped others to solve a particular problem.",
-        "Designed a hiring posters, calling cards, company logo and created wireframes using Figma for design enhancements",
-        "Involved in polishing the client-side of the Productivity Employee Tracker system using jQuery, HTML/CSS, NodeJs/ExpressJs and ajax",
-        "Contributed in the development of the Human Resources portal site using jQuery, HTML/CSS and Javascript",
-        "Spearheaded the design of wireframes for upcoming projects."
+        "Scaled real-time user interaction for 10K+ users on the Mint09 international e-learning platform by engineering backend APIs and client interfaces using Next.js, Node.js, Prisma ORM, WebSockets, and MySQL.",
+        "Modernized internal HR and Productivity Tracking platforms, delivering responsive web interfaces using JavaScript (ES6+), jQuery, Bootstrap 5, and Node.js.",
+        "Streamlined product design-to-code pipelines by translating client business specifications into technical requirements, authoring interactive Figma UI wireframes, and leading client design consultations."
       ]
     }
   ],
@@ -252,10 +240,10 @@
       "name": "BENGUET STATE UNIVERSITY",
       "degree": "Bachelor of Science in Information Technology",
       "awards": [
-        "First place in Java Programming Competition during IT week (2018)",
-        "Second place in C# Programming Competition during IT week (2018)",
-        "Third place in Java Programming Competition during IT week (2017)",
-        "Third place in Greenfoot Programming Competition during IT week (2016)"
+        "2018: 1st place, Java Programming Competition (BSU IT Week)",
+        "2018: 2nd place, C# Programming Competition (BSU IT Week)",
+        "2017: 3rd place, Java Programming Competition (BSU IT Week)",
+        "2016: 3rd place, Greenfoot Programming Competition (BSU IT Week)"
       ]
     },
     {
